@@ -47,7 +47,7 @@ function justdoit_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Sort criterion: Content: Due Date (field_due_date) */
+  /* Sort criterion: Content: Due (field_due_date) */
   $handler->display->display_options['sorts']['field_due_date_value']['id'] = 'field_due_date_value';
   $handler->display->display_options['sorts']['field_due_date_value']['table'] = 'field_data_field_due_date';
   $handler->display->display_options['sorts']['field_due_date_value']['field'] = 'field_due_date_value';

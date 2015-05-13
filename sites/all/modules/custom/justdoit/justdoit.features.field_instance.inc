@@ -38,8 +38,8 @@ function justdoit_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_due_date',
-    'label' => 'Due Date',
-    'required' => FALSE,
+    'label' => 'Due',
+    'required' => 0,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -48,6 +48,7 @@ function justdoit_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'date',
       'settings' => array(
         'increment' => 15,
@@ -105,7 +106,7 @@ function justdoit_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Due Date');
+  t('Due');
   t('Status');
 
   return $field_instances;
