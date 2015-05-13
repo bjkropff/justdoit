@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * justdoit.features.inc
+ */
+
+/**
+ * Implements hook_node_info().
+ */
+function justdoit_node_info() {
+  $items = array(
+    'justdoit_task' => array(
+      'name' => t('Task'),
+      'base' => 'node_content',
+      'description' => t('Add a task here'),
+      'has_title' => '1',
+      'title_label' => t('Task'),
+      'help' => '',
+    ),
+  );
+  drupal_alter('node_info', $items);
+  return $items;
+}

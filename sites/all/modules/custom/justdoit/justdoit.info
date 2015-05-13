@@ -1,0 +1,16 @@
+name = justdoit
+description = A todo list manager with a focus on today's tasks
+core = 7.x
+package = Features
+version = 7.x-2.5
+project = justdoit
+dependencies[] = date
+dependencies[] = features
+dependencies[] = list
+dependencies[] = options
+features[features_api][] = api:2
+features[field_base][] = field_due_date
+features[field_base][] = field_status
+features[field_instance][] = node-justdoit_task-field_due_date
+features[field_instance][] = node-justdoit_task-field_status
+features[node][] = justdoit_task
